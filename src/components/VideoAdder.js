@@ -11,7 +11,7 @@ export default function VideoAdder(){
     }
 
     return (
-        <div>
+        <div className='container'>
             <Form addLink={addLink} />
             <VideoList videoLinkList={videoLinkList} />
         </div>

@@ -6,9 +6,8 @@ export default function VideoList(props){
     const {videoLinkList} = props;
 
     return (
-        <div>
-            <Video videoLink="https://www.youtube.com/watch?v=n61ULEU7CO0" />
-            {/* Map Video using LinkList here */}
+        <div className='video-list'>
+            {videoLinkList.map(link => (<Video videoLink={link} />))}
         </div>
     )
 }

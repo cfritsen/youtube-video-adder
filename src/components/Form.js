@@ -8,8 +8,10 @@ export default function Form(props){
     const changeHandler = evt => {
         setForm(evt.target.value)
     }
-    const submitHandler = () => {
+    const submitHandler = evt => {
+        evt.preventDefault();
         addLink(form)
+        setForm('')
     }
 
     return (
