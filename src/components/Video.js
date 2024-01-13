@@ -1,4 +1,5 @@
 import React from 'react'
+import './Video.css'
 
 //-----------------------
 export default function Video(props){
@@ -18,6 +19,6 @@ const VideoFormatter = prop => {
     const source = `https://www.youtube.com/embed/${vidID}`;
 
     return (
-    <iframe width="560" height="315" src={source} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width='100%' height='100%' src={source} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     )
 }
